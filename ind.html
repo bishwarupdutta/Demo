@@ -1,0 +1,44 @@
+<html>
+<script>
+    let name = 'Bishwarup';
+    let address = 'Jamtara';
+    let postal = 815351;
+    console.log(name, postal);
+
+    /*function sayGreeting() {
+        let message = 'Hello everyone';
+        console.log(message);
+    }
+    sayGreeting();*/
+
+    // global variable
+    /*let message = 'Welcome';
+    function sayGreeting() {
+        var message = 'Hello';
+        console.log(message);
+    }
+    sayGreeting();
+    console.log(message);*/
+
+    var ename;
+    console.log(ename);
+    ename = 'Smith';
+
+    var sal = 2000, age = 21;
+    {
+        let temp = sal;
+        sal = age;
+        age = temp;
+    }
+    console.log(temp); // It Will show an error because temp is declared in blocked scope.
+
+    const DESIGNATION = 'Manager';
+    DESIGNATION = 'Sales';
+    console.log(DESIGNATION);
+    console.log(DESIGNATION);
+    console.log(DESIGNATION);
+
+
+</script>
+
+</html>
