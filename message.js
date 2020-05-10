@@ -119,6 +119,9 @@ console.log(count.toString(2));
 
 console.log((255).toString(16));
 
+var str = "Chrome Browser";
+console.log(str.substr(0, 8));
+console.log(str.substr(8, 4));
 
 
 
