@@ -61,7 +61,7 @@ console.log(accessForDL);*/
 
 
 //switch statement
-
+/*
 var grade = 'B';
 switch (grade) {
     case 'A':
@@ -121,7 +121,46 @@ for (var count = 1; count < 10; count++) {
     }
     console.log('Value: ' + count);
 
-}
+}*/
 
 //array
+
+/*var colors = new Array();
+
+var depts = [];
+
+var fruits = ['Apple', 'Mango', 'Banana'];
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+
+fruits[3] = 'Coconut';
+fruits[2] = 'Guava';
+
+console.log(fruits.length);
+console.log(fruits);
+
+console.log(typeof fruits);  //objects
+console.log(Array.isArray(fruits)); // true
+
+console.log(fruits.toString()); // Apple,Mango,Guava,Coconut
+console.log(fruits.valueOf());  // (4) ["Apple","Mango","Guava","Coconut"]
+
+console.log(fruits.join(' $ ')); // Apple $ Mango $ Guava $ Coconut
+console.log(fruits.join(' - '));
+*/
+
+var mixArr = [{ ename: 'Smith' }, false, function () { console.log('Hello') }, 'Apple'];
+console.log(mixArr[0].ename);
+//mixArr[2]();
+console.log(mixArr[3]);
+
+
+var cubes = [[1, 2, 3], [4, 5, 6]];
+for (var i = 0; i < cubes.length; i++) {
+    var cube = cubes[i];
+    for (var j = 0; j < cube.length; j++) {
+        console.log('cube[' + i + '][' + j + '] =' + cube[j]);
+    }
+}
 
