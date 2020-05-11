@@ -46,9 +46,15 @@ else {
 console.log(accessForDL);
 */
 
-var accessForDL;
+/*var accessForDL;
 var age = prompt("Enter your age", '');
 
 accessForDL = (age >= 18) ? 'Issue Driving Licence ' : ' Don\'t Issue ';
 
-console.log(accessForDL);
+console.log(accessForDL);*/
+
+var grade;
+var marks = prompt("Enter your marks", "");
+
+grade = (marks > 90) ? 'Grade E' : (marks > 80) ? 'Grade A' : (marks > 70) ? 'Grade B' : (marks > 50) ? 'Grade C' : (marks > 40) ? 'Grade D' : 'Fail';
+console.log(grade);
