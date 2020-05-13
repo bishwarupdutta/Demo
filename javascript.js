@@ -150,7 +150,7 @@ console.log(fruits.join(' $ ')); // Apple $ Mango $ Guava $ Coconut
 console.log(fruits.join(' - '));
 */
 
-var mixArr = [{ ename: 'Smith' }, false, function () { console.log('Hello') }, 'Apple'];
+/*var mixArr = [{ ename: 'Smith' }, false, function () { console.log('Hello') }, 'Apple'];
 console.log(mixArr[0].ename);
 //mixArr[2]();
 console.log(mixArr[3]);
@@ -163,4 +163,47 @@ for (var i = 0; i < cubes.length; i++) {
         console.log('cube[' + i + '][' + j + '] =' + cube[j]);
     }
 }
+*/
+// Stack and Queue
 
+var stack = [];
+
+stack.push(1);
+console.log(stack);     // [1]
+
+stack.push(2);
+console.log(stack);     // [1,2]
+
+stack.push(3);
+console.log(stack);     // [1,2,3]
+
+console.log(stack.pop());
+console.log(stack);         // [1,2]
+
+console.log(stack.pop());
+console.log(stack);         // [1]
+
+
+function reverse(str) {
+    var stack = [];
+    for (var i = 0; i < str.length; i++) {
+        stack.push(str[i]);
+    }
+    var reverseStr = '';
+    while (stack.length > 0) {
+        reverseStr = reverseStr + stack.pop();
+
+    }
+    console.log(reverseStr);
+
+}
+reverse('Javascript');
+
+var num = '56789';
+var queue = [];
+
+for (var i = 0; i < num.length; i++) {
+    console.log(num[i]);
+    queue.unshift(num[i]);  // adds new item to the beginning of the array .
+}                           // queue.shift() is used to remove the item from the beginning 0f the array.
+console.log(queue);
